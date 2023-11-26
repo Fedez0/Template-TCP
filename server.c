@@ -82,7 +82,7 @@ int main () {
 
     //////////// ricevo richiesta dal client //////////////////////
     
-    if (listen(s, 4) < 0) {
+    if (listen(s, MAX_CLIENT) < 0) {
         error(NULL);
     }
   
